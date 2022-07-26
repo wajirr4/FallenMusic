@@ -18,7 +18,7 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-                f"ʜᴇʏ {message.from_user.mention()},\nᴛʜɪs ɪs [{bn}](t.me/{lel}) ʙᴏᴛ ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ.\n\nᴅᴏɴ'ᴛ ᴛʀʏ ᴛᴏ sᴘᴀᴍ ʜᴇʀᴇ ᴇʟsᴇ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ꜰᴜ*ᴋᴇᴅ ʙʏ [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](t.me/{OWNER_USERNAME}).\n",
+                f"ʜᴇʏ {message.from_user.mention()},\𝙼𝚢 𝚋𝚘𝚜𝚜 𝚒𝚜 𝚗𝚘𝚝 𝚘𝚗𝚕𝚒𝚗𝚎 𝚗𝚘𝚠. 𝙸'𝚖 𝚑𝚒𝚜 𝚊𝚜𝚜𝚒𝚜𝚝𝚊𝚗𝚝\n\n𝙋𝙡𝙚𝙖𝙨𝙚 𝙡𝙚𝙖𝙫𝙚 𝙮𝙤𝙪𝙧 𝙢𝙚𝙨𝙨𝙖𝙜𝙚. 𝑩𝒐𝒔𝒔 𝒘𝒊𝒍𝒍 𝒄𝒐𝒏𝒕𝒂𝒄𝒕 𝒚𝒐𝒖 𝒍𝒂𝒕𝒆𝒓 𝒊𝒇 𝒉𝒆 𝒘𝒂𝒏𝒕 👋🇧🇩[𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](https://t.me/{OWNER_USERNAME}).\n",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -59,7 +59,7 @@ async def autopmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("» ᴀᴜᴛᴏ ᴀᴘᴘʀᴏᴠᴇᴅ ᴛᴏ ᴘᴍ​ ʙᴀʙʏ.")
+        await message.reply_text("» ᴀᴘᴘʀᴏᴠᴇᴅ.")
         return
     message.continue_propagation()    
     
@@ -68,7 +68,7 @@ async def pmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("» ᴀᴘᴘʀᴏᴠᴇᴅ ᴛᴏ ᴘᴍ​.")
+        await message.reply_text("» ᴀᴘᴘʀᴏᴠᴇᴅ")
         return
     message.continue_propagation()    
     
